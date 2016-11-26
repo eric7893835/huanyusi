@@ -1,0 +1,65 @@
+@import "common";
+
+#content{
+  background: url("../images/zc-bg.png") 0 0 repeat-y;
+  background-size: 100% 100%;
+}
+#top-pic{
+  height:2.9rem;
+  img{
+    height: 100%;
+  }
+}
+
+#raise-list{
+  padding: 0 10px;
+  box-sizing: border-box;
+  .raise-item{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0.05rem;
+    width: 100%;
+    height: 2.96rem;
+    background-color: @bg-white;
+    box-sizing: border-box;
+    &:first-child{
+      margin-top: 0;
+    }
+    &:last-child{
+      margin-bottom: 10px;
+    }
+    .raise-pic{
+      height: 1.82rem;
+      border-radius: 0.05rem;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .raise-describe{
+      height: 0.42rem;
+      overflow: hidden;
+      border-bottom: 1px dashed @border-gray;
+      color: @text-gray;
+      line-height: 0.21rem;
+    }
+
+    .raise-info{
+      height: 0.5rem;
+      color: @text-gray;
+      .raise-name-number{
+        overflow: hidden;
+        margin-top: 0.04rem;
+        span:first-child{
+          color: @text-golden;
+        }
+      }
+
+      .raise-money{
+        color: @text-gray;
+        margin-top: 0.04rem;
+      }
+    }
+  }
+}

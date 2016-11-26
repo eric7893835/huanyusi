@@ -1,0 +1,164 @@
+@import "common";
+
+.object-pic{
+  height: 1.8rem;
+  border-bottom: 1px solid #666;
+  img{
+    height: 100%;
+  }
+}
+.input-info{
+  color: @text-gray;
+  .info,.input{
+    border-bottom: 1px dashed @border-gray;
+    padding: 0 15px;
+  }
+  .input{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    span{
+      height: 0.3rem;
+      overflow: hidden;
+    }
+
+    .left{
+      width: 85%;
+    }
+    .right{
+      width:15%;
+      text-align: right;
+    }
+    &:last-child{
+      .right{
+        width:100%;
+        text-align: right;
+      }
+    }
+    .money{
+      font-size: 0.15rem;
+      color: @text-golden;
+    }
+    #userName{
+      width: 100%;
+    }
+    button{
+      width: 0.2rem;
+      margin: 0 4px;
+    }
+    input[type="text"]{
+      border: none;
+      border-radius: 0.02rem;
+      background-color: #f1f1f1;
+      height: 0.2rem;
+      width: 4em;
+      text-indent: 0.1rem;
+    }
+    input[type="number"]{
+      text-indent: 0.5em;
+      border-radius: 0.03rem;
+      height: 0.2rem;
+      width: 0.4rem;
+    }
+    .right{
+      img{
+        width: 1.26rem;
+        margin-top: 0.05rem;
+      }
+    }
+  }
+  .operation{
+    #number{
+      margin: 0 1px;
+    }
+    input[type="button"]{
+      width: 0.2rem;
+      height: 0.2rem;
+    }
+
+    .left{
+      width: 60%;
+    }
+    .right{
+      width:40%;
+      text-align: right;
+    }
+  }
+  //input样式完毕
+  .info{
+    height: 0.6rem;
+    overflow: hidden;
+    line-height: 0.26rem;
+    .money{
+      color: @text-golden;
+    }
+    .text-black{
+      color: black;
+    }
+  }
+}
+
+//列表组
+.list-group{
+  background-color: @bg-gray;
+  box-sizing: border-box;
+  padding: 10px;
+  .list-item{
+    //第一个不要上边距
+    &:first-child{
+      margin-top: 0;
+    }
+    //最后一个落款
+    &:last-child{
+      height:1.25rem;
+      text-align: center;
+      img{
+        width: 2.18rem;
+      }
+    }
+    margin-top: 10px;
+    border-radius: 0.04rem;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: @bg-white;
+    .show-pic{
+      border-radius: 0.03rem;
+      height: 1.28rem;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+    .item-title{
+      clear: both;
+      height: 0.26rem;
+      line-height: 0.26rem;
+      color: @text-gray;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      border-bottom: 1px dashed @border-gray;
+      span{
+        font-size: 0.14rem;
+      }
+      font-size: 0.1rem;
+    }
+    .item-operation{
+      height: 0.2rem;
+      line-height: 0.3rem;
+      font-size: 0.1rem;
+      color: @text-gray;
+      .money{
+        font-size: 0.16rem;
+        color: @text-golden;
+      }
+      .btn{
+        float: right;
+        img{
+          margin-top: 0.03rem;
+          width: 1.35rem;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,56 @@
+@import "common";
+
+#content{
+  .title{
+    border-bottom: 2px solid #b3b3b3;
+    height: 0.6rem;
+    img{
+      width: 100%;
+    }
+  }
+  .details-list{
+    background-color: #e6e6e6;
+    padding: 20px;
+    .details-item{
+      margin-top: 10px;
+      border-radius: 5px;
+      background-color: white;
+      padding: 0 15px;
+      min-height: 0.4rem;
+      p{
+        height: 0.4rem;
+        line-height: 0.4rem;
+        overflow: hidden;
+        font-size: 0.14rem;
+        span{
+          display: inline-block;
+        }
+        .text-content{
+          text-indent: 1em;
+        }
+        .left{
+          width: 0.25rem;
+          line-height: 0.4rem;
+          img{
+            margin-top: 0.1rem;
+            width: 0.25rem;
+            height: 0.22rem;
+          }
+        }
+      }
+      ul{
+        border-top: 1px solid #e8e8e8;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        .item{
+          font-size: 0.1rem;
+          line-height: 0.3rem;
+          border-bottom: 1px dashed #e8e8e8;
+          &:last-child{
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import "common";
+
+
+
+#content{
+  background-color: @bg-gray;
+  overflow: hidden;
+}
+.photo{
+  height: 1.8rem;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+#operation{
+  height: auto;
+  margin: 10px auto;
+  padding: 0 10px;
+  color: @text-gray;
+  .raise-name-number{
+    overflow: hidden;
+    margin-top: 0.04rem;
+    span:first-child{
+      color:#D6232D;
+    }
+  }
+
+  .raise-money{
+    color: @text-gray;
+    margin-top: 0.04rem;
+    overflow: hidden;
+    .right{
+      a{
+        font-size: 0.08rem;
+        color: #33B2E2;
+      }
+    }
+
+    .raise-sub-list{
+      display: none;
+      clear: both;
+      margin-top: 10px;
+      border-radius: 0.03rem;
+      background-color: white;
+      padding: 10px;
+      li{
+        border-radius: 0.03rem;
+        border-bottom: 1px dashed #e8e8e8;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        span{
+          width: 32%;
+          display: inline-block;
+          text-align: center;
+          &:first-child{
+            text-align: left;
+          }
+        }
+        &:last-child{
+          border: none;
+        }
+      }
+    }
+  }
+
+  .money{
+    margin-top: 0.1rem;
+    line-height: 0.3rem;
+    color: black;
+    text-align: center;
+    &,.btn-confirm,.lines{
+      height: 0.3rem;
+      border:  none;
+    }
+    .btn-confirm{
+      height: 0.3rem;
+      background-color: #D6232D;
+      color: white;
+      padding: 0 0.1rem;
+      border-radius: 0.05rem;
+    }
+    .lines{
+      text-indent: 1em;
+      width: 0.9rem;
+      border-color: @bg-white;
+      border-radius: 0.05rem;
+      margin: 0 10px;
+    }
+  }
+}
+
+
+#info-list{
+  padding: 10px;
+  .info-body{
+    padding: 10px;
+    background-color:  white;
+    border-radius: 0.05rem;
+    .info{
+      border-bottom: 1px dashed @border-gray;
+      padding: 0 15px;
+      height: 0.6rem;
+      line-height: 0.28rem;
+      &:last-child{
+        border:none;
+      }
+      .money{
+        color: @text-golden;
+      }
+      .text-black{
+        color: black;
+      }
+    }
+  }
+
+  .footer{
+    margin-top: 10px;
+    border-radius: 0.05rem;
+    height:1.25rem;
+    background-color: white;
+    text-align: center;
+    img{
+      margin-top: 0.12rem;
+      width: 2.18rem;
+    }
+  }
+}

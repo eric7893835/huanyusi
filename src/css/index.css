@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Tahoma, Arial, Roboto, "Droid San", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self, "微软雅黑";
+}
+@font-face {
+  font-family: '方正姚体简体';
+  src: url('../font/FZYTJW.TTF');
+}
+@font-face {
+  font-family: '微软雅黑';
+  src: url('../font/msyh.ttf');
+}
+html {
+  font-size: 100px;
+}
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 112.5px !important;
+  }
+}
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 117.187px !important;
+  }
+}
+@media only screen and (min-width: 412px) {
+  html {
+    font-size: 128.75px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 240px !important;
+  }
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 0.12rem;
+}
+a {
+  text-decoration: none;
+  margin-left: -0.04rem;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+#content {
+  width: 3.2rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.top-operation {
+  height: 0.3rem;
+  background-color: #1b1b1f;
+  line-height: 0.3rem;
+  position: relative;
+}
+.top-operation p {
+  font-size: 0.14rem;
+  color: white;
+  text-align: center;
+}
+.top-operation span {
+  position: absolute;
+  left: 10px;
+  color: #666666;
+}
+.progress {
+  margin-top: 0.04rem;
+  height: 0.08rem;
+  border-radius: 0.1rem;
+  background-color: #e6e6e6;
+  position: relative;
+}
+.progress .progress-bar {
+  height: 100%;
+  border-radius: 0.1rem;
+  background-color: #ff6600;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.progress .progress-bar-red {
+  background-color: #D6232D;
+}
+.progress-white {
+  background-color: white;
+}
+.theme {
+  width: 100%;
+  height: 2.23rem;
+}
+.theme img {
+  width: 3.2rem;
+}
+.show-info {
+  margin-top: 10px;
+}
+.show-info h3 {
+  color: #E09137;
+  line-height: 0.28rem;
+  height: 0.28rem;
+  font-family: "方正姚体简体";
+  text-align: center;
+  font-size: 0.16rem;
+}
+.show-info p {
+  color: #666666;
+  height: 0.16rem;
+  line-height: 0.16rem;
+  text-align: center;
+  font-size: 0.08rem;
+}
+.list-group {
+  margin-top: 10px;
+  background-color: #e6e6e6;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.list-group .list-item {
+  margin-top: 10px;
+  border-radius: 0.04rem;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #fff;
+}
+.list-group .list-item:nth-child(1) {
+  margin-top: 0;
+}
+.list-group .list-item:last-child,
+.list-group .list-item .copy {
+  height: 1.25rem;
+  text-align: center;
+}
+.list-group .list-item:last-child img,
+.list-group .list-item .copy img {
+  width: 2.18rem;
+}
+.list-group .list-item .show-pic {
+  border-radius: 0.03rem;
+  height: 1.28rem;
+}
+.list-group .list-item .show-pic img {
+  width: 100%;
+}
+.list-group .list-item .item-title {
+  height: 0.26rem;
+  line-height: 0.26rem;
+  color: #666666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px dashed #e6e6e6;
+  font-size: 0.1rem;
+}
+.list-group .list-item .item-title span {
+  font-size: 0.14rem;
+}
+.list-group .list-item .item-operation {
+  height: 0.2rem;
+  line-height: 0.3rem;
+  font-size: 0.1rem;
+  color: #666666;
+}
+.list-group .list-item .item-operation .money {
+  font-size: 0.16rem;
+  color: #E09137;
+}
+.list-group .list-item .item-operation .btn {
+  float: right;
+}
+.list-group .list-item .item-operation .btn img {
+  margin-top: 0.03rem;
+  width: 1.35rem;
+}
+/*# sourceMappingURL=index.css.map */
